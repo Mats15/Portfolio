@@ -1,0 +1,154 @@
+/*koko sivuun vaikuttava css alkaa */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*koko sivuun vaikuttava css loppuu */
+
+/*Navbar css alkaa */
+/* Navbar linkeille välit sekä niiden ympärille padding */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+/* Navbar tekstin asettaminen flexaamaan tilan mukaan */
+.left-side {
+    display: flex;
+}
+
+.right-side {
+    font-size: 1.5em;;
+}
+
+/* Navbar tekstin asettaminen uppercase ja fontin koko */
+.nav-wrapper > .left-side > div {
+   margin-right: 20px;
+   font-size: 1.2em;
+   text-transform: uppercase;
+}
+
+/* Navbar tekstin koko, border ja hoveraus transition */
+.nav-link-wrapper {
+    height: 26px;
+    border-bottom: 1px solid transparent; 
+    transition: border-botton 0.5s;
+}
+
+/* Navbar väri ennen hoverausta */
+.nav-link-wrapper a {
+    color: #696868;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* Navbar alleviivaus väri */
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+/* Navbar hoveraus väri */
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+/* Navbar css loppuu */
+
+/* Portfolio tyylit alkaa */
+/* Asetetaan gridin sisään kuvat sijoittaen ne vierekkäin */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}    
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img{
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+/* Tekstin traansition */
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+/* Tekstin hoveraus */
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: rgb(208, 218, 217);
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* About alkaa */
+
+.two-colum-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 65%;
+    padding-left: 45px;
+    padding-top: 55px;
+}
+
+.profile-content-wrapper{
+    padding: 30px;   
+}
+
+.profile-content-wrapper{
+    color: black;   
+}
+
+/*cv*/
+
+.cv-image-wrapper img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
