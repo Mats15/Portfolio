@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- Head alkaa -->
+    <head>
+        <meta charset="utf-8" />
+        <!-- sivun Title -->
+        <title>Portfolio homepage</title>
+        <!-- sivun Fontstyle -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <!-- Linkki css tiedostoon alla -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <!-- Head loppuu -->
+
+    <!-- Body alkaa alla -->
+    <body> 
+        <!-- Navbar alla -->
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="cv.html">CV</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>MATIAS VORNANEN</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/edusta_picture.jpg)">
+                        </div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="logos/wordpress-logo.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Websites that i have made public Worldpress.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                       
+                        <div class="portfolio-img-background" style="background-image:url(images/mina-picture.JPG)">
+                            
+                        </div>
+                        <!-- a alla aloittaa linkin about sivulle -->
+                            <a href="about.html" >
+                                <div class="img-text-wrapper">
+                                    <div class="logo-wrapper">
+                                        <img src="logos/me-logo.png">
+                                    </div>
+
+                                    <div class="subtitle">
+                                        About me.
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                        
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/cv_picture.jpg)">
+                        </div>
+                        <a href="cv.html" >
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="logos/hat-logo.png">
+                                </div>
+
+                                <div class="subtitle">
+                                    My resume.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/chihu_picture.jpg)">
+                        </div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="logos/code_picture.jpg">
+                            </div>
+
+                            <div class="subtitle">
+                                I built new websites to my dad.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/chihu_picture.jpg)">
+                        </div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="logos/code_picture.jpg">
+                            </div>
+
+                            <div class="subtitle">
+                                I built new websites to my dad.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/chihu_picture.jpg)">
+                        </div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="logos/code_picture.jpg">
+                            </div>
+
+                            <div class="subtitle">
+                                I built new websites to my dad.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/chihu_picture.jpg)">
+                        </div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="logos/code_picture.jpg">
+                            </div>
+
+                            <div class="subtitle">
+                                I built new websites to my dad.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/chihu_picture.jpg)">
+                        </div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="logos/code_picture.jpg">
+                            </div>
+
+                            <div class="subtitle">
+                                I built new websites to my dad.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/chihu_picture.jpg)">
+                        </div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="logos/code_picture.jpg">
+                            </div>
+
+                            <div class="subtitle">
+                                I built new websites to my dad.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <!-- Body loppuu -->
+<!-- Javascript alkaa -->
+<script>
+    const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioitems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',() => {
+            portfolioItem.childNodes[1].classList;
+            portfolioItem.childNodes[1].classList.add('img-darken');
+
+            
+        })
+
+        portfolioItem.addEventListener('mouseout',() => {
+            portfolioItem.childNodes[1].classList;
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+            
+            
+        })
+    })
+</script>
+</html>
