@@ -20,6 +20,10 @@ Tehtävät
      - Images <-- lisää oikea kuva
      - Split colum layout
      - Content <-- lisää teksti
+5. Certificate page
+    - Imagen flexaus korjaa.
 
 
+6. Todo
+    - logot responsiiviseks
      Video: 46.21 min 16.3.2021 katsottu kokonaan 17.3.2021

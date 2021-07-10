@@ -8,6 +8,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+
 /*koko sivuun vaikuttava css loppuu */
 
 /*Navbar css alkaa */
@@ -72,9 +74,18 @@ body {
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}    
+}   
 
 .portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-items-wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}  
+
+.portfolio-item-wrapper2 {
     position: relative;
 }
 
@@ -100,13 +111,9 @@ body {
 }
 /* Logo size and margin */
 .logo-wrapper img{
-    width: 60%;
+    width: 40%;
     margin-bottom: 20px;
-}
-/* Neo logo size and margin test */
-.neo-logo-wrapper img{
-    width: 70%;
-    margin-bottom: 20px;
+    position: relative;
 }
 
 /* Tekstin traansition */
@@ -155,5 +162,77 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+/*Neo site*/
+
+/* Neo logo size and margin test */
+.neo-logo-wrapper img{
+    width: 60%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/*certificare*/
+.certificate-header-wrapper {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.text-and-certification {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.certificate-image-wrapper img {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.param-wrapper {
+    text-align: center;
+    position: relative; 
+}
+.certification-logo-wrapper img{
+    width: 60%;
+    margin-bottom: 20px;
+    position: relative;
     
+}
+
+/* wrapper2 */
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.img-text-wrapper2 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.img-text-wrapper2:hover .subtitle {
+    font-weight: 600;
+    color: rgb(208, 218, 217);
+}
+
+.img-text-wrapper2 .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
 }
