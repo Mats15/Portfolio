@@ -104,6 +104,11 @@ body {
     margin-bottom: 20px;
 }
 
+.neo-logo-wrapper img{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
 /* Tekstin traansition */
 .img-text-wrapper .subtitle {
     transition: 1s;
