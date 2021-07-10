@@ -103,8 +103,8 @@ body {
     width: 60%;
     margin-bottom: 20px;
 }
-
-.neo-logo-wrapper {
+/* Neo logo size and margin test */
+.neo-logo-wrapper img{
     width: 70%;
     margin-bottom: 20px;
 }
