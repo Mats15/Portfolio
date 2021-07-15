@@ -1,4 +1,4 @@
-/*koko sivuun vaikuttava css alkaa */
+/*The css that affects the whole page starts */
 body {
     font-family: 'Playfair Display', serif;
     margin: 0px;
@@ -10,17 +10,17 @@ body {
 }
 
 
-/*koko sivuun vaikuttava css loppuu */
+/*The css affecting the entire page ends */
 
-/*Navbar css alkaa */
-/* Navbar linkeille välit sekä niiden ympärille padding */
+/*Navbar css start */
+/* Navbar links to the spacing as well as padding around them*/
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 45px;
 }
 
-/* Navbar tekstin asettaminen flexaamaan tilan mukaan */
+/* Set Navbar text to flex according to mode */
 .left-side {
     display: flex;
 }
@@ -29,33 +29,33 @@ body {
     font-size: 1.5em;;
 }
 
-/* Navbar tekstin asettaminen uppercase ja fontin koko */
+/* Navbar text setting for uppercase and font size */
 .nav-wrapper > .left-side > div {
    margin-right: 20px;
    font-size: 1.2em;
    text-transform: uppercase;
 }
 
-/* Navbar tekstin koko, border ja hoveraus transition */
+/* Navbar text size, border and hover transition */
 .nav-link-wrapper {
     height: 26px;
     border-bottom: 1px solid transparent; 
     transition: border-botton 0.5s;
 }
 
-/* Navbar väri ennen hoverausta */
+/* Navbar color before hover */
 .nav-link-wrapper a {
     color: #696868;
     text-decoration: none;
     transition: color 0.5s;
 }
 
-/* Navbar alleviivaus väri */
+/* Navbar underline color */
 .nav-link-wrapper:hover {
     border-bottom: 1px solid black;
 }
 
-/* Navbar hoveraus väri */
+/* Navbar hover color*/
 .nav-link-wrapper a:hover {
     color: black;
 }
@@ -67,10 +67,28 @@ body {
 .active-nav-link a{
     color: black !important;
 }
-/* Navbar css loppuu */
 
-/* Portfolio tyylit alkaa */
-/* Asetetaan gridin sisään kuvat sijoittaen ne vierekkäin */
+/* Right side name moving*/
+.brand{
+    margin-left: 100px;
+}
+/* Right side logo*/
+.upper_logo_container{
+    width: 60px;
+    float: left;
+    height: 100%;
+    display: block;
+   
+}
+/* Right side logo img*/
+.upper_logo_container img{
+    width: 60px;
+    height: auto;
+}
+/* Navbar css end */
+
+/* Portfolio styles begin */
+/* Place the images inside the grid, placing them side by side */
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,14 +134,14 @@ body {
     position: relative;
 }
 
-/* Tekstin traansition */
+/* Text transitions */
 .img-text-wrapper .subtitle {
     transition: 1s;
     font-weight: 600;
     color: transparent;
 }
 
-/* Tekstin hoveraus */
+/* Text hovering */
 .img-text-wrapper:hover .subtitle {
     font-weight: 600;
     color: rgb(208, 218, 217);
@@ -134,7 +152,7 @@ body {
     filter: brightness(10%);
 }
 
-/* About alkaa */
+/* About start */
 
 .two-colum-wrapper {
     display: grid;
@@ -155,7 +173,7 @@ body {
     color: black;   
 }
 
-/*cv*/
+/*cv start*/
 
 .cv-image-wrapper img{
     display: block;
@@ -235,4 +253,83 @@ body {
     transition: 1s;
     font-weight: 600;
     color: transparent;
+}
+
+/* Footer start */
+/*footer box settings*/
+.footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #18181a;
+}
+
+.inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.inner_footer .logo_container{
+    width: 60px;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner_footer .logo_container img{
+    width: 60px;
+    height: auto;
+    margin-left: 500px;
+}
+
+.inner_footer .footer_third{
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: right;
+    height: 100%;
+}
+
+.inner_footer .footer_third:last-child{
+    margin-right: 0;
+}
+
+.inner_footer .footer_third h1{
+    font-family: 'arial';
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner_footer .footer_third a{
+    font-family: 'arial';
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.inner_footer .footer_third li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+@media(max-width: 800px){
+    .footer .inner_footer{
+        width: 90%;
+    }
+
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
