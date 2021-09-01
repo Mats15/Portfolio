@@ -1,4 +1,4 @@
-/*koko sivuun vaikuttava css alkaa */
+/*The css that affects the whole page starts */
 body {
     font-family: 'Playfair Display', serif;
     margin: 0px;
@@ -8,17 +8,19 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
-/*koko sivuun vaikuttava css loppuu */
 
-/*Navbar css alkaa */
-/* Navbar linkeille välit sekä niiden ympärille padding */
+
+/*The css affecting the entire page ends */
+
+/*Navbar css start */
+/* Navbar links to the spacing as well as padding around them*/
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 45px;
 }
 
-/* Navbar tekstin asettaminen flexaamaan tilan mukaan */
+/* Set Navbar text to flex according to mode */
 .left-side {
     display: flex;
 }
@@ -27,33 +29,33 @@ body {
     font-size: 1.5em;;
 }
 
-/* Navbar tekstin asettaminen uppercase ja fontin koko */
+/* Navbar text setting for uppercase and font size */
 .nav-wrapper > .left-side > div {
    margin-right: 20px;
    font-size: 1.2em;
    text-transform: uppercase;
 }
 
-/* Navbar tekstin koko, border ja hoveraus transition */
+/* Navbar text size, border and hover transition */
 .nav-link-wrapper {
     height: 26px;
     border-bottom: 1px solid transparent; 
     transition: border-botton 0.5s;
 }
 
-/* Navbar väri ennen hoverausta */
+/* Navbar color before hover */
 .nav-link-wrapper a {
     color: #696868;
     text-decoration: none;
     transition: color 0.5s;
 }
 
-/* Navbar alleviivaus väri */
+/* Navbar underline color */
 .nav-link-wrapper:hover {
     border-bottom: 1px solid black;
 }
 
-/* Navbar hoveraus väri */
+/* Navbar hover color*/
 .nav-link-wrapper a:hover {
     color: black;
 }
@@ -65,16 +67,43 @@ body {
 .active-nav-link a{
     color: black !important;
 }
-/* Navbar css loppuu */
 
-/* Portfolio tyylit alkaa */
-/* Asetetaan gridin sisään kuvat sijoittaen ne vierekkäin */
+/* Right side name moving*/
+.brand{
+    margin-left: 100px;
+}
+/* Right side logo*/
+.upper_logo_container{
+    width: 60px;
+    float: left;
+    height: 100%;
+    display: block;
+   
+}
+/* Right side logo img*/
+.upper_logo_container img{
+    width: 60px;
+    height: auto;
+}
+/* Navbar css end */
+
+/* Portfolio styles begin */
+/* Place the images inside the grid, placing them side by side */
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}    
+}   
 
 .portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-items-wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}  
+
+.portfolio-item-wrapper2 {
     position: relative;
 }
 
@@ -100,23 +129,19 @@ body {
 }
 /* Logo size and margin */
 .logo-wrapper img{
-    width: 60%;
+    width: 40%;
     margin-bottom: 20px;
-}
-/* Neo logo size and margin test */
-.neo-logo-wrapper img{
-    width: 70%;
-    margin-bottom: 20px;
+    position: relative;
 }
 
-/* Tekstin traansition */
+/* Text transitions */
 .img-text-wrapper .subtitle {
     transition: 1s;
     font-weight: 600;
     color: transparent;
 }
 
-/* Tekstin hoveraus */
+/* Text hovering */
 .img-text-wrapper:hover .subtitle {
     font-weight: 600;
     color: rgb(208, 218, 217);
@@ -127,7 +152,7 @@ body {
     filter: brightness(10%);
 }
 
-/* About alkaa */
+/* About start */
 
 .two-colum-wrapper {
     display: grid;
@@ -148,12 +173,236 @@ body {
     color: black;   
 }
 
-/*cv*/
+/*cv start*/
 
 .cv-image-wrapper img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+/*Neo site*/
+
+/* Neo logo size and margin test */
+.neo-logo-wrapper img{
+    width: 60%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/*certificare*/
+.certificate-header-wrapper {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.text-and-certification {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.certificate-image-wrapper img {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.param-wrapper {
+    text-align: center;
+    position: relative; 
+}
+.certification-logo-wrapper img{
+    width: 60%;
+    margin-bottom: 20px;
+    position: relative;
     
 }
+
+/* wrapper2 */
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.img-text-wrapper2 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.img-text-wrapper2:hover .subtitle {
+    font-weight: 600;
+    color: rgb(208, 218, 217);
+}
+
+.img-text-wrapper2 .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+/* Footer start */
+/*footer box settings*/
+.footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #18181a;
+}
+
+.inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.inner_footer .logo_container{
+    width: 60px;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner_footer .logo_container img{
+    width: 60px;
+    height: auto;
+    margin-left: 500px;
+}
+
+.inner_footer .footer_third{
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: right;
+    height: 100%;
+}
+
+.inner_footer .footer_third:last-child{
+    margin-right: 0;
+}
+
+.inner_footer .footer_third h1{
+    font-family: 'arial';
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner_footer .footer_third a{
+    font-family: 'arial';
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.inner_footer .footer_third li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+@media(max-width: 800px){
+    .footer .inner_footer{
+        width: 90%;
+    }
+
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Contact */
+/*upper information*/
+.upper-information{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #18181a;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+/*midle information*/
+  .midle-information{
+    width: 100vw;
+    display: block;
+    padding: 0 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+  }
+
+/*my Video*/
+ #myVideo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: inherit;
+    height: 100%;   
+    object-fit: cover;    
+    object-position: center;
+  }
+
+  /*upper information*/
+  .button-box {
+    padding-bottom: 30px;
+  }
+
+  .content {
+    min-height: 100vh;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content h1{
+    background: #000 none repeat scroll 0 0;
+    color: tan;
+    font-weight: 600;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+  }
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  /*Style button hover*/
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
