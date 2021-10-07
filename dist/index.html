@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <!-- Head start -->
     <head>
         <meta charset="utf-8" />
@@ -11,37 +10,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
         <!-- Link to css file -->
         <link rel="stylesheet" href="styles.css">
-
     </head>
     <!-- Head end -->
-
     <!-- Body start -->
     <body> 
         <!-- Navbar  -->
         <div class="container">
             <div class="nav-wrapper">
+                <!-- Drop Nav -->
                 <div class="left-side">
-                    <div class="nav-link-wrapper active-nav-link">
-                        <a href="index.html">Home</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="about.html">About</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="cv.html">CV</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="certificate.html">Certificates</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="contact.html">Contact information</a>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="about.html">About</a>
+                            <a href="cv.html">CV</a>
+                            <a href="certificate.html">Certificates</a>
+                            <a href="contact.html">Contact information</a>
+                        </div>
                     </div>
                 </div>
-
                 <div class="right-side">
                     <div class="upper_logo_container">
                         <img src="logos/mats-logo.png">
@@ -50,29 +37,23 @@
                         <div>MATIAS VORNANEN </div>
                     </div>
                 </div>
-
             </div>
-             <!-- Wp page start -->
             <div class="content-wrapper">
                 <div class="portfolio-items-wrapper">
-
                     <div class="portfolio-item-wrapper">
                         <div class="portfolio-img-background" style="background-image:url(images/edusta_picture.jpg)">
-                        </div>
-                        
+                        </div>                      
                         <div class="img-text-wrapper">
                             <div class="logo-wrapper">
                                 <img src="logos/wordpress-logo.png">
                             </div>
-
                             <div class="subtitle">
                                 Websites that i have made public Worldpress.
                             </div>
                         </div>
                     </div>
                      <!-- About page start-->
-                    <div class="portfolio-item-wrapper">
-                       
+                    <div class="portfolio-item-wrapper">                      
                         <div class="portfolio-img-background" style="background-image:url(images/mina-picture.JPG)">
                         </div>
                         <!-- Link to about page -->
@@ -81,7 +62,6 @@
                                     <div class="logo-wrapper">
                                         <img src="logos/me-logo.png">
                                     </div>
-
                                     <div class="subtitle">
                                         About me.
                                     </div>
@@ -98,7 +78,6 @@
                                 <div class="logo-wrapper">
                                     <img src="logos/hat-logo.png">
                                 </div>
-
                                 <div class="subtitle">
                                     My resume.
                                 </div>
@@ -107,108 +86,61 @@
                     </div>
                 </div>
             </div>
-                    <div class="container2">    <!-- Neo page start -->
-                        <div class="portfolio-items-wrapper2">
-                            <div class="portfolio-item-wrapper2">
-                                <div class="portfolio-img-background" style="background-image:url(images/neo-chill.jpeg)">
-                                </div>
-                                <a href="../Neongalleriasivut/kuva-galleria.html">
-                                    <div class="img-text-wrapper2">
-                                        <div class="neo-logo-wrapper">
-                                            <img src="logos/neo-dog-logo-white.png">
-                                        </div>
-
-                                        <div class="subtitle">
-                                            Websites i have made for my Dog.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-
-                            <!-- Certificate page start -->
-                            <div class="portfolio-item-wrapper2">
-                                <div class="portfolio-img-background" style="background-image:url(images/Responsive-Web-Design_certificate\ \(1\).jpg)">
-                                </div>
-                                <a href="certificate.html">
-                                    <div class="img-text-wrapper2">
-                                        <div class="certification-logo-wrapper">
-                                            <img src="logos/certification-logo-white.png">
-                                        </div>
-
-                                        <div class="subtitle">
-                                            Here is my Certificates.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+            <div class="container2">    <!-- Neo page start -->
+                <div class="portfolio-items-wrapper2">
+                    <div class="portfolio-item-wrapper2">
+                        <div class="portfolio-img-background" style="background-image:url(images/neo-chill.jpeg)">
                         </div>
+                        <a href="../Neongalleriasivut/kuva-galleria.html">
+                            <div class="img-text-wrapper2">
+                                <div class="neo-logo-wrapper">
+                                    <img src="logos/neo-dog-logo-white.png">
+                                </div>
 
+                                <div class="subtitle">
+                                    Websites i have made for my Dog.
+                                </div>
+                            </div>
+                        </a>
                     </div>
-              <!-- Footer start -->
-                    <div class="footer">
-                        <div class="inner_footer">
-                            <div class="logo_container">
-                                <img src="logos/mats-logo.png">
-                            </div>
-
-                            <div class="footer_third">
-                                <h1>Need help?</h1>
-                                <a href="contact.html">Contact information</a>
-                            </div>
-
-                            <div class="footer_third">
-                                <h1>Social</h1>
-                                <li><a href="https://fi.linkedin.com/in/matias-vornanen-825b86170">LinkedIn</a></li>
-                                <li><a href="https://github.com/Mats15">GitHub</a></li>
-                            </div>
+                    <!-- Certificate page start -->
+                    <div class="portfolio-item-wrapper2">
+                        <div class="portfolio-img-background" style="background-image:url(images/Responsive-Web-Design_certificate\ \(1\).jpg)">
                         </div>
+                        <a href="certificate.html">
+                            <div class="img-text-wrapper2">
+                                <div class="certification-logo-wrapper">
+                                    <img src="logos/certification-logo-white.png">
+                                </div>
+                                <div class="subtitle">
+                                    Here is my Certificates.
+                                </div>
+                            </div>
+                        </a>
                     </div>
-
-        
+                </div>
+            </div>
+            <!-- Footer start -->
+            <div class="footer">
+                <div class="inner_footer">
+                    <div class="logo_container">
+                        <img src="logos/mats-logo.png">
+                    </div>
+                    <div class="footer_third">
+                        <h1>Need help?</h1>
+                        <a href="contact.html">Contact information</a>
+                    </div>
+                    <div class="footer_third">
+                        <h1>Social</h1>
+                        <li><a href="https://fi.linkedin.com/in/matias-vornanen-825b86170">LinkedIn</a></li>
+                        <li><a href="https://github.com/Mats15">GitHub</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
     <!-- Body end -->
-<!-- Javascript start -->
-<script>
-    const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
-    
-
-    portfolioitems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover',() => {
-            portfolioItem.childNodes[1].classList;
-            portfolioItem.childNodes[1].classList.add('img-darken');
-
-            
-        })
-
-        portfolioItem.addEventListener('mouseout',() => {
-            portfolioItem.childNodes[1].classList;
-            portfolioItem.childNodes[1].classList.remove('img-darken');
-            
-            
-        })
-    })  
-
-    const portfolioitems1 = document.querySelectorAll('.portfolio-item-wrapper2')
-    
-
-    portfolioitems1.forEach(portfolioItem1 => {
-        portfolioItem1.addEventListener('mouseover',() => {
-            portfolioItem1.childNodes[1].classList;
-            portfolioItem1.childNodes[1].classList.add('img-darken');
-
-            
-        })
-
-        portfolioItem1.addEventListener('mouseout',() => {
-            portfolioItem1.childNodes[1].classList;
-            portfolioItem1.childNodes[1].classList.remove('img-darken');
-            
-            
-        })
-    })  
-</script>
-
- <!-- Javascript end -->
-
+    <!-- Javascript start -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Javascript end -->
 </html>

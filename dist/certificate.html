@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <!-- Head alkaa -->
     <head>
         <meta charset="utf-8" />
@@ -11,108 +10,86 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
         <!-- Linkki css tiedostoon alla -->
         <link rel="stylesheet" href="styles.css">
-
     </head>
     <!-- Head loppuu -->
-
     <!-- Body alkaa alla -->
     <body> 
         <!-- Navbar alla -->
         <div class="container">
             <div class="nav-wrapper">
+                <!-- Drop Nav -->
                 <div class="left-side">
-                    <div class="nav-link-wrapper">
-                        <a href="index.html">Home</a>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="cv.html">CV</a>
+                            <a href="contact.html">Contact information</a>
+                        </div>
                     </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="about.html">About</a>
+                </div>
+                <div class="right-side">
+                    <div class="upper_logo_container">
+                        <img src="logos/mats-logo.png">
                     </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="cv.html">CV</a>
+                    <div class="brand">
+                        <div>MATIAS VORNANEN </div>
                     </div>
-                    
-                    <div class="nav-link-wrapper active-nav-link">
-                        <a href="certificate.html">Certificates</a>
+                </div>
+            </div>
+            <div class="content-wrapper">                                   
+                <div class="certificate-header-wrapper">
+                    <h1>Here you can find my online course certificates what i have made on my free time.</h1>
+                </div>
+                    <div class="text-and-certification">
+                        <div class="certificate-image-wrapper">  
+                            <div class="param-wrapper">
+                                <p>Responsive Web Design certificate</p>                                                                   
+                            </div>
+                            <img src="images/Responsive-Web-Design_certificate (1).jpg">
+                        </div>                        
+                        <div class="certificate-image-wrapper">  
+                            <div class="param-wrapper">
+                                <p> HTML certificate </p>    
+                            </div>
+                            <img src="images/HTML_certificate.jpg">
+                        </div>
+                        <div class="certificate-image-wrapper">                             
+                                <p>Javascript certificate</p>                             
+                            <img src="images/JavaScript_certificate.jpg">
+                        </div>                        
+                        <div class="certificate-image-wrapper">                              
+                                <p>Javascript certificate</p>                          
+                            <img src="images/JS-cer.JPG">
+                        </div>
+                        <div class="certificate-image-wrapper">                              
+                                <p>Python certificate</p>                         
+                        <img src="images/pyt-cer.JPG">
+                        </div>
+                    </div>  
+            </div>
+            <!-- Footer start -->
+            <div class="footer">
+                <div class="inner_footer">
+                    <div class="logo_container">
+                        <img src="logos/mats-logo.png">
                     </div>
-
-                    <div class="nav-link-wrapper">
+                    <div class="footer_third">
+                        <h1>Need help?</h1>
                         <a href="contact.html">Contact information</a>
                     </div>
-
-                </div>
-
-                <div class="right-side">
-                    <div class="brand">
-                        <div>MATIAS VORNANEN</div>
+                    <div class="footer_third">
+                        <h1>Social</h1>
+                        <li><a href="https://fi.linkedin.com/in/matias-vornanen-825b86170">LinkedIn</a></li>
+                        <li><a href="https://github.com/Mats15">GitHub</a></li>
                     </div>
                 </div>
-
             </div>
-
-            <div class="content-wrapper">
-                
-                    
-                    <div class="certificate-header-wrapper">
-                        <h1>Here you can find my online course certificates what i have made on my free time.</h1>
-                    </div>
-                
-                        <div class="text-and-certification">
-
-                        
-
-                            <div class="certificate-image-wrapper">  
-                                <div class="param-wrapper">
-                                    <p>
-                                        Responsive Web Design certificate
-                                    </p>
-                                </div>
-                                <img src="images/Responsive-Web-Design_certificate (1).jpg">
-                            </div>
-                            
-                            <div class="certificate-image-wrapper">  
-                                <div class="param-wrapper">
-                                    <p>
-                                        HTML certificate
-                                    </p>
-                                </div>
-                                <img src="images/HTML_certificate.jpg">
-                            </div>
-
-                            <div class="certificate-image-wrapper">  
-                               
-                                    <p>
-                                            Javascript certificate
-                                    </p>
-                                
-                                <img src="images/JavaScript_certificate.jpg">
-                            </div>
-                            
-                            <div class="certificate-image-wrapper">  
-                               
-                                    <p>
-                                            Javascript certificate
-                                    </p>
-                            
-                                <img src="images/JS-cer.JPG">
-                            </div>
-
-                            <div class="certificate-image-wrapper">  
-                               
-                                    <p>
-                                            Python certificate
-                                    </p>
-                            
-                            <img src="images/pyt-cer.JPG">
-                            </div>
-
-                         
-                        </div>
-                        
-            </div>
-
         </div>
     </body>
     <!-- Body loppuu -->
+    <!-- Javascript start -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Javascript end -->
 </html>

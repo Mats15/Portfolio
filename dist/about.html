@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <!-- Head alkaa -->
     <head>
         <meta charset="utf-8" />
@@ -11,46 +10,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
         <!-- Linkki css tiedostoon alla -->
         <link rel="stylesheet" href="styles.css">
-
     </head>
     <!-- Head loppuu -->
-
     <!-- Body alkaa alla -->
     <body> 
         <!-- Navbar alla -->
         <div class="container">
             <div class="nav-wrapper">
+                <!-- Drop Nav -->
                 <div class="left-side">
-                    <div class="nav-link-wrapper">
-                        <a href="index.html">Home</a>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="cv.html">CV</a>
+                            <a href="certificate.html">Certificates</a>
+                            <a href="contact.html">Contact information</a>
+                        </div>
                     </div>
-
-                    <div class="nav-link-wrapper active-nav-link">
-                        <a href="about.html">About</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="cv.html">CV</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="certificate.html">Certificates</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="contact.html">Contact information</a>
-                    </div>
-
                 </div>
-
                 <div class="right-side">
+                    <div class="upper_logo_container">
+                        <img src="logos/mats-logo.png">
+                    </div>
                     <div class="brand">
-                        <div>MATIAS VORNANEN</div>
+                        <div>MATIAS VORNANEN </div>
                     </div>
                 </div>
-
             </div>
-
             <div class="content-wrapper">
                 <div class="two-colum-wrapper">
                     <div class="profile-image-wrapper">
@@ -67,14 +54,32 @@
                             I still play on a basketball team called Lost boys with the same playmates with whom I started playing basketball. 
                             I also enjoy disc golf, outdoor exercise and other ball sports. 
                             In my free time I have read and studied computer science myself.
-                            I am really interested in learning more about web development so if you have any interesting job opportunities for me then please contact me and we can chat about them.
-                               
+                            I am really interested in learning more about web development so if you have any interesting job opportunities for me then please contact me and we can chat about them.                              
                         </p>
                     </div>
                 </div>
             </div>
-
+            <!-- Footer start -->
+            <div class="footer">
+                <div class="inner_footer">
+                    <div class="logo_container">
+                        <img src="logos/mats-logo.png">
+                    </div>
+                    <div class="footer_third">
+                        <h1>Need help?</h1>
+                        <a href="contact.html">Contact information</a>
+                    </div>
+                    <div class="footer_third">
+                        <h1>Social</h1>
+                        <li><a href="https://fi.linkedin.com/in/matias-vornanen-825b86170">LinkedIn</a></li>
+                        <li><a href="https://github.com/Mats15">GitHub</a></li>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
     <!-- Body loppuu -->
+    <!-- Javascript start -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Javascript end -->
 </html>
