@@ -133,7 +133,8 @@ body {
 }
 /* Logo size and margin */
 .logo-wrapper img{
-    width: 40%;
+    width: 60%;
+    height: auto;
     margin-bottom: 20px;
     position: relative;
 }
@@ -191,6 +192,7 @@ body {
 /* Neo logo size and margin test */
 .neo-logo-wrapper img{
     width: 60%;
+    height: auto;
     margin-bottom: 20px;
     position: relative;
 }
@@ -224,6 +226,7 @@ body {
     position: relative; 
 }
 .certification-logo-wrapper img{
+    height: auto;
     width: 60%;
     margin-bottom: 20px;
     position: relative;
@@ -280,6 +283,7 @@ body {
 
 .inner_footer .logo_container{
     width: 60px;
+    height: auto;
     float: left;
     height: 100%;
     display: block;
@@ -297,9 +301,8 @@ body {
     float: right;
     height: 100%;
 }
-
-.inner_footer .footer_third:last-child{
-    margin-right: 0;
+ol {
+    padding: 0;
 }
 
 .inner_footer .footer_third h1{
@@ -323,7 +326,6 @@ body {
 
 .inner_footer .footer_third li{
     display: inline-block;
-    padding: 0 5px;
     font-size: 20px;
 }
 
@@ -335,6 +337,7 @@ body {
     .inner_footer .logo_container,
     .inner_footer .footer_third{
         width: 100%;
+        height: auto;
         margin-bottom: 30px;
     }
 }
