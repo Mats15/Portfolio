@@ -252,6 +252,11 @@ body {
     text-align: center;
 }
 
+/* .img-text-wrapper2 #wordpress {
+    
+    
+} */
+
 .img-text-wrapper2:hover .subtitle {
     font-weight: 600;
     color: rgb(208, 218, 217);
