@@ -19,17 +19,17 @@ body {
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
     background-color: #18181a;
 }
 
 /* Set Navbar text to flex according to mode */
 .left-side {
     display: flex;
+    padding-left: 10px;
 }
 
 .right-side {
-    font-size: 1.5em;;
+    font-size: 1.5em;
 }
 
 /* Navbar text setting for uppercase and font size */
@@ -167,12 +167,15 @@ body {
 
 .profile-image-wrapper img {
     width: 65%;
-    padding-left: 45px;
-    padding-top: 55px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .profile-content-wrapper{
     padding: 30px;   
+}
+.profile-content-wrapper, p{
+     font-size: 1.2em; 
 }
 
 .profile-content-wrapper{
@@ -271,11 +274,11 @@ body {
 /* Footer start */
 /*footer box settings*/
 .footer{
-    width: 100vw;
+    height: auto;
     display: block;
     overflow: hidden;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     box-sizing: border-box;
     background-color: #18181a;
 }
@@ -291,14 +294,12 @@ body {
     width: 60px;
     height: auto;
     float: left;
-    height: 100%;
     display: block;
 }
 
 .inner_footer .logo_container img{
     width: 60px;
     height: auto;
-    margin-left: 500px;
 }
 
 .inner_footer .footer_third{
@@ -346,6 +347,10 @@ ol {
         height: auto;
         margin-bottom: 30px;
     }
+    .text-and-certification {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Contact */
@@ -383,7 +388,7 @@ ol {
 
   /*upper information*/
   .button-box {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   .content {
