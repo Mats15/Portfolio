@@ -140,6 +140,10 @@ body {
     position: relative;
 }
 
+.logo-wrapper img:nth-child(1){
+   width: 40%;
+}
+
 /* Text transitions */
 .img-text-wrapper .subtitle {
     transition: 1s;
