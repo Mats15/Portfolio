@@ -400,6 +400,10 @@ ol {
         padding-left: 0;
         padding-top: 20px;
     }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
 }
 
 /* Contact */
@@ -432,17 +436,13 @@ ol {
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    text-align: left;
-  }
-
-  .grid-item-inner {
-    display: grid;
-    grid-template-columns: auto auto;
+    padding-top: 10px;
+    text-align: center;
+    margin: 0px;
   }
 
   .grid-item img {
-      width: 95%;
+      width: 70%;
   }
 
   /* Style the Image Used to Trigger the Modal */
