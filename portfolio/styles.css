@@ -151,6 +151,12 @@ body {
     color: transparent;
 }
 
+.book-logo-wrapper img{
+    height: auto;
+    width: 20%;
+    position: relative;
+}
+
 /* Text hovering */
 .img-text-wrapper:hover .subtitle {
     font-weight: 600;
