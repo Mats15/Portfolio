@@ -221,7 +221,6 @@ body {
     font-size: 1.3em;
 }
 
-
 /*Neo site*/
 
 /* Neo logo size and margin test */
@@ -285,8 +284,7 @@ body {
 }
 
 /* .img-text-wrapper2 #wordpress {
-    
-    
+        
 } */
 
 .img-text-wrapper2:hover .subtitle {
@@ -365,47 +363,6 @@ ol {
     font-size: 20px;
 }
 
-@media(max-width: 800px){
-    .footer .inner_footer{
-        width: 90%;
-    }
-
-    .inner_footer .logo_container,
-    .inner_footer .footer_third{
-        width: 100%;
-        height: auto;
-        margin-bottom: 30px;
-    }
-    .text-and-certification {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .portfolio-items-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio-items-wrapper2 {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .two-colum-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .profile-image-wrapper img {
-        width: 70%;
-        padding-left: 0;
-        padding-top: 20px;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-}
-
 /* Contact */
 /*upper information*/
 .upper-information{
@@ -431,7 +388,7 @@ ol {
   /*3d model page*/
   .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -518,13 +475,6 @@ ol {
     cursor: pointer;
   }
   
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-  }
-
 /*my Video*/
  #myVideo {
     position: absolute;
@@ -618,3 +568,52 @@ ol {
   .show {
       display:block;
     }
+
+    @media(max-width: 800px){
+        .footer .inner_footer{
+            width: 90%;
+        }
+    
+        .inner_footer .logo_container,
+        .inner_footer .footer_third{
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        .text-and-certification {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .portfolio-items-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+        .portfolio-items-wrapper2 {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+        .two-colum-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        .profile-image-wrapper img {
+            width: 70%;
+            padding-left: 0;
+            padding-top: 20px;
+        }
+    
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
